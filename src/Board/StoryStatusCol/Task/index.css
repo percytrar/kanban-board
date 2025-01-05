@@ -1,0 +1,112 @@
+/* Styling for task card */
+.task {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task:hover {
+  transform: translateY(-5px);
+}
+
+/* Title of the task */
+.task h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #172b4d; /* Dark blue */
+  margin-bottom: 8px;
+}
+
+/* Task description */
+.task p {
+  font-size: 14px;
+  color: #6b778c; /* Grey */
+  margin-bottom: 8px;
+}
+
+/* Footer section with tags for status, story points, and assignee */
+.task-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Status tag */
+.status-tag {
+  background-color: #f4c300; /* Default color, will be overridden by inline style */
+  color: white;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Story points tag */
+.story-points-tag {
+  background-color: #0065ff;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Assignee tag */
+.assignee-tag {
+  background-color: #00b8d9;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.action-buttons button {
+  background-color: #0052cc;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #0065ff;
+  transform: translateY(-2px);
+}
+
+.action-buttons button:active {
+  background-color: #004b9f;
+  transform: translateY(2px);
+}
+
+/* Delete button - specific color */
+.action-buttons button.delete {
+  background-color: #d9534f;
+}
+
+.action-buttons button.delete:hover {
+  background-color: #c9302c;
+}
+
+.action-buttons button.delete:active {
+  background-color: #ac2925;
+}
